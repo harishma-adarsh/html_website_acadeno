@@ -1041,15 +1041,23 @@ footer {
 
 /* Mobile Alignment Fix for Industry Section */
 @media (max-width: 768px) {
+    .industry-readiness {
+        padding: 1.5rem 1rem;
+        /* Reduce padding to fix alignment gap */
+        margin-top: 3rem;
+    }
+
     .industry-list {
         flex-direction: column;
         align-items: stretch;
-        gap: 1rem;
+        gap: 0.8rem;
     }
 
     .industry-item {
         width: 100%;
         justify-content: flex-start;
-        background: #ffffff;
+        background: #f8fafc;
+        /* Slight contrast on mobile */
+        border: 1px solid var(--border-color);
     }
 }
