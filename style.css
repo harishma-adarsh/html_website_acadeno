@@ -987,3 +987,69 @@ footer {
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
     }
 }
+
+/* Industry Readiness Training */
+.industry-readiness {
+    margin-top: 4rem;
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+}
+
+.industry-readiness h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: var(--text-highlight);
+}
+
+.industry-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.industry-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.industry-item:hover {
+    background: #ffffff;
+    border-color: var(--accent-glow);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-2px);
+}
+
+.industry-item .icon {
+    background: rgba(99, 102, 241, 0.1);
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    min-width: 40px;
+    text-align: center;
+}
+
+/* Mobile Alignment Fix for Industry Section */
+@media (max-width: 768px) {
+    .industry-list {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .industry-item {
+        width: 100%;
+        justify-content: flex-start;
+        background: #ffffff;
+    }
+}
