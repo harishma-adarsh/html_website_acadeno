@@ -51,6 +51,8 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+    /* Offset for even larger header */
 }
 
 body {
@@ -183,8 +185,8 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 0.4rem 0;
-    /* Reduced from 1rem */
+    padding: 0.9rem 0;
+    /* Extra padding */
     transition: 0.3s ease;
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
@@ -205,15 +207,14 @@ nav {
 }
 
 .logo-img {
-    height: 50px;
-    /* Reduced from 120px */
+    height: 100px;
+    /* Max prominence */
     width: auto;
     object-fit: contain;
     mix-blend-mode: multiply;
     /* Removes white background */
     image-rendering: -webkit-optimize-contrast;
-    transform: scale(1.25);
-    /* Adjusted from 1.6 */
+    transform: scale(1.5);
     transform-origin: left center;
 }
 
@@ -318,14 +319,21 @@ nav {
 .feature-tag {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9rem;
+    justify-content: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
     color: var(--accent-glow);
-    background: rgba(99, 102, 241, 0.08);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    border: 1px solid rgba(99, 102, 241, 0.15);
-    font-weight: 500;
+    background: rgba(99, 102, 241, 0.05);
+    padding: 0.6rem 1.25rem;
+    border-radius: 50px;
+    border: 1px solid rgba(99, 102, 241, 0.1);
+    font-weight: 600;
+    transition: var(--transition-fast);
+}
+
+.feature-tag:hover {
+    background: rgba(99, 102, 241, 0.1);
+    transform: translateY(-2px);
 }
 
 /* Quick Overview */
@@ -840,7 +848,35 @@ footer {
     }
 
     .hero-features {
-        justify-content: center;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0.75rem !important;
+        width: 100% !important;
+        align-items: center !important;
+        margin: 1.5rem auto !important;
+    }
+
+    .feature-tag {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        width: 90% !important;
+        max-width: 320px !important;
+        padding: 0.7rem 1.75rem !important;
+        /* Restored padding for border space */
+        background: transparent !important;
+        backdrop-filter: blur(8px) !important;
+        /* Added subtle blur for readability */
+        border: 1px solid rgba(99, 102, 241, 0.3) !important;
+        /* Restored border */
+        border-radius: 50px !important;
+        /* Restored pill shape */
+        box-shadow: none !important;
+        font-size: 0.9rem !important;
+        font-weight: 600 !important;
+        text-align: left !important;
+        white-space: nowrap !important;
+        color: var(--accent-glow) !important;
     }
 
     .about-container-flex,
@@ -891,8 +927,20 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .hero-content {
+        margin: 0 auto;
+        text-align: center;
+    }
+
     .hero h1 {
         font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .btn {
@@ -904,18 +952,29 @@ footer {
     }
 
     .hero-features {
-        flex-direction: column;
-        gap: 0.8rem;
-        width: 100%;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0.75rem !important;
+        width: 100% !important;
+        align-items: center !important;
+        margin: 1.5rem 0 !important;
     }
 
     .feature-tag {
-        justify-content: center;
-        width: 100%;
-        padding: 0.7rem 1.2rem;
-        background: rgba(99, 102, 241, 0.05);
-        backdrop-filter: blur(4px);
-        text-align: center;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        width: 90% !important;
+        max-width: 290px !important;
+        padding: 0.6rem 1.5rem !important;
+        background: transparent !important;
+        backdrop-filter: blur(8px) !important;
+        border: 1px solid rgba(99, 102, 241, 0.3) !important;
+        border-radius: 50px !important;
+        box-shadow: none !important;
+        font-size: 0.85rem !important;
+        text-align: left !important;
+        white-space: nowrap !important;
     }
 }
 
