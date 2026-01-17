@@ -183,7 +183,8 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 0.4rem 0;
+    /* Reduced from 1rem */
     transition: 0.3s ease;
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
@@ -204,13 +205,15 @@ nav {
 }
 
 .logo-img {
-    height: 120px;
+    height: 50px;
+    /* Reduced from 120px */
     width: auto;
     object-fit: contain;
     mix-blend-mode: multiply;
     /* Removes white background */
     image-rendering: -webkit-optimize-contrast;
-    transform: scale(1.6);
+    transform: scale(1.25);
+    /* Adjusted from 1.6 */
     transform-origin: left center;
 }
 
@@ -242,7 +245,7 @@ nav {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 60px;
     position: relative;
     overflow: hidden;
     /* Light overlay on background image */
