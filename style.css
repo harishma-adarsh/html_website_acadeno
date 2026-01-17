@@ -903,11 +903,16 @@ footer {
     .hero-features {
         flex-direction: column;
         gap: 0.8rem;
+        width: 100%;
     }
 
     .feature-tag {
         justify-content: center;
         width: 100%;
+        padding: 0.7rem 1.2rem;
+        background: rgba(99, 102, 241, 0.05);
+        backdrop-filter: blur(4px);
+        text-align: center;
     }
 }
 
