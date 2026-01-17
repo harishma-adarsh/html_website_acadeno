@@ -657,16 +657,17 @@ nav {
 .steps-container::before {
     content: '';
     position: absolute;
-    left: 20px;
+    left: 22px;
+    /* Fixed point for line */
     top: 0;
     bottom: 0;
     width: 2px;
     background: #e2e8f0;
-    /* Slate-200 */
 }
 
 .step-card {
-    margin-left: 3rem;
+    margin-left: 60px;
+    /* Space for circles */
     background: #ffffff;
     padding: 1.5rem;
     border-radius: 12px;
@@ -681,7 +682,8 @@ nav {
 
 .step-number {
     position: absolute;
-    left: -3rem;
+    left: -60px;
+    /* Matches card margin to align with line */
     top: 1.5rem;
     width: 44px;
     height: 44px;
@@ -858,21 +860,22 @@ footer {
     }
 
     .steps-container {
-        padding-left: 2.5rem;
+        padding-left: 0;
         position: relative;
     }
 
     .steps-container::before {
-        left: 0.75rem;
+        left: 18px;
+        /* Target center for line on mobile */
     }
 
     .step-card {
-        margin-left: 0;
-        padding: 1.5rem;
+        margin-left: 45px;
+        padding: 1.25rem;
     }
 
     .step-number {
-        left: -1.5rem;
+        left: -45px;
         top: 1.25rem;
         width: 36px;
         height: 36px;
