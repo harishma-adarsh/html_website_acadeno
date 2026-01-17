@@ -9,8 +9,7 @@
     content="Acadeno Technologies Pvt Ltd - Where AI Builds Your Career. Personalised tech training, internships in Python, AI, Robotics, and industry-ready skill development in Calicut.">
   <link rel="stylesheet" href="style.css">
   <!-- Favicon placeholder -->
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+  <link rel="icon" type="image/png" href="assets/acadeno-logo-final.png">
 </head>
 
 <body>
@@ -19,7 +18,9 @@
   <header>
     <div class="container">
       <nav>
-        <div class="logo">Acadeno<span>.</span></div>
+        <a href="#home" class="logo-link">
+          <img src="assets/acadeno-logo-final.png" alt="Acadeno Technologies" class="logo-img">
+        </a>
         <div class="mobile-menu-btn">☰</div>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
@@ -306,7 +307,7 @@
 
       <div style="text-align: center; margin-top: 3rem;">
         <p class="highlight-text" style="font-size: 1.2rem; font-weight: 600; color: var(--text-highlight);">We focus on
-          <span style="text-decoration: underline; text-decoration-color: var(--accent-glow);">outcomes</span>, not just
+          <span class="focus-text">outcomes</span>, not just
           certificates.
         </p>
       </div>
@@ -351,19 +352,49 @@
         <h3>Industry Readiness Training</h3>
         <div class="industry-list">
           <div class="industry-item">
-            <span class="icon">🎯</span>
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="6" />
+                <circle cx="12" cy="12" r="2" />
+              </svg>
+            </span>
             <span>Technical & HR Interview Prep</span>
           </div>
           <div class="industry-item">
-            <span class="icon">🗣️</span>
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                <line x1="9" y1="10" x2="15" y2="10" />
+                <line x1="12" y1="7" x2="12" y2="13" />
+              </svg>
+            </span>
             <span>Soft Skills & Personality Dev</span>
           </div>
           <div class="industry-item">
-            <span class="icon">👥</span>
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </span>
             <span>Group Discussions</span>
           </div>
           <div class="industry-item">
-            <span class="icon">🧠</span>
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 3.44-3.04A2.5 2.5 0 0 1 9.5 2Z" />
+                <path
+                  d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-3.44-3.04A2.5 2.5 0 0 0 14.5 2Z" />
+              </svg>
+            </span>
             <span>Aptitude & Logical Reasoning</span>
           </div>
         </div>
@@ -374,7 +405,7 @@
   <!-- Contact & Footer -->
   <section id="contact" class="contact">
     <div class="container">
-      <h2 class="section-title">Get In Touch</h2>
+      <h2 class="section-title focus-text">Get In Touch</h2>
       <div class="contact-layout">
         <div class="contact-info">
           <div class="contact-info-item">
@@ -416,6 +447,13 @@
             <button type="submit" class="btn btn-primary" style="width: 100%;">Schedule Free Consultation</button>
           </form>
         </div>
+      </div>
+
+      <!-- Map Section -->
+      <div class="contact-map">
+        <iframe
+          src="https://maps.google.com/maps?q=Acadeno+Technologies+Pvt+Ltd+Calicut&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
   </section>
