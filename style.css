@@ -770,18 +770,28 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 902px) {
+    :root {
+        --section-padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
     .nav-links {
         display: none;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background: #ffffff;
+        background: rgba(255, 255, 255, 0.98);
         flex-direction: column;
         padding: 2rem;
         border-bottom: 1px solid var(--border-color);
-        box-shadow: var(--shadow-lg);
+        box-shadow: var(--shadow-xl);
+        text-align: center;
+        backdrop-filter: blur(10px);
     }
 
     .nav-links.active {
@@ -791,20 +801,57 @@ footer {
     .mobile-menu-btn {
         display: block;
     }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .hero {
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: 0 auto;
+    }
 
     .hero h1 {
         font-size: 2.5rem;
     }
 
+    .hero p {
+        font-size: 1.1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-features {
+        justify-content: center;
+    }
+
     .about-container-flex,
     .why-wrapper {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .about-image,
     .why-image {
         order: -1;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Program Cards: adjust min-width for grid to prevent overflow on small phones */
+    .program-cards,
+    .services-grid {
+        grid-template-columns: 1fr;
     }
 
     .steps-container::before {
@@ -812,12 +859,41 @@ footer {
     }
 
     .step-card {
-        margin-left: 1rem;
+        margin-left: 0.5rem;
+        padding: 1.2rem;
     }
 
     .step-card::before,
     .step-number {
         display: none;
+    }
+
+    .contact-layout {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 0.7rem 1.5rem;
+        width: 100%;
+        /* Full width buttons on mobile */
+        margin-bottom: 0.5rem;
+        margin-left: 0 !important;
+    }
+
+    .hero-features {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .feature-tag {
+        justify-content: center;
+        width: 100%;
     }
 }
 
