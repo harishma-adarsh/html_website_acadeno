@@ -683,18 +683,20 @@ nav {
     position: absolute;
     left: -3rem;
     top: 1.5rem;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     background: #ffffff;
-    border: 2px solid var(--accent-glow);
+    border: 3px solid var(--accent-glow);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+    font-weight: 800;
     color: var(--accent-glow);
     z-index: 2;
     box-shadow: var(--shadow-sm);
+    line-height: 1;
+    text-align: center;
 }
 
 /* Contact */
@@ -856,24 +858,25 @@ footer {
     }
 
     .steps-container {
-        padding-left: 3rem;
+        padding-left: 2.5rem;
         position: relative;
     }
 
     .steps-container::before {
-        left: 1rem;
+        left: 0.75rem;
     }
 
     .step-card {
         margin-left: 0;
-        padding: 1.2rem;
+        padding: 1.5rem;
     }
 
     .step-number {
-        left: -2.5rem;
-        top: 1.5rem;
+        left: -1.5rem;
+        top: 1.25rem;
+        width: 36px;
+        height: 36px;
         display: flex;
-        /* Ensure it's visible */
     }
 
     .contact-layout {
