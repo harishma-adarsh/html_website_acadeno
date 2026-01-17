@@ -855,18 +855,25 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .steps-container {
+        padding-left: 3rem;
+        position: relative;
+    }
+
     .steps-container::before {
-        left: -10px;
+        left: 1rem;
     }
 
     .step-card {
-        margin-left: 0.5rem;
+        margin-left: 0;
         padding: 1.2rem;
     }
 
-    .step-card::before,
     .step-number {
-        display: none;
+        left: -2.5rem;
+        top: 1.5rem;
+        display: flex;
+        /* Ensure it's visible */
     }
 
     .contact-layout {
