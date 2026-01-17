@@ -676,7 +676,10 @@ nav {
 }
 
 .step-card::before {
-    content: '';
+    content: none;
+}
+
+.step-number {
     position: absolute;
     left: -3rem;
     top: 1.5rem;
@@ -685,20 +688,13 @@ nav {
     background: #ffffff;
     border: 2px solid var(--accent-glow);
     border-radius: 50%;
-    z-index: 1;
-}
-
-.step-number {
-    position: absolute;
-    left: -36px;
-    top: 24px;
-    width: 24px;
-    height: 24px;
-    text-align: center;
-    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
     color: var(--accent-glow);
     z-index: 2;
+    box-shadow: var(--shadow-sm);
 }
 
 /* Contact */
@@ -1093,4 +1089,10 @@ footer {
     overflow: hidden;
     box-shadow: var(--shadow-md);
     border: 1px solid var(--border-color);
+}
+
+.contact-svg {
+    vertical-align: middle;
+    margin-right: 8px;
+    color: var(--accent-glow);
 }
